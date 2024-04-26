@@ -5,3 +5,55 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+header{
+	background-color: #2A5E88
+}
+
+h1 a{
+	color: white;
+	font-family: Montserrat;
+	margin-left:1rem;
+	text-decoration: none;
+}
+
+h1 span{
+	color: #87CEEB;
+}
+
+h1 a:hover{
+	color:#87CEEB;
+}
+
+.flex-header{
+	display:flex;
+	justify-content: space-between;	
+}
+
+.float-right{
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:white;
+	font-family: Montserrat;
+	margin: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	color:#87CEEB;
+	font-family: Montserrat;
+	margin: 1rem;
+}
+
+header video{
+	width: 100%;
+}
