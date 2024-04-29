@@ -7,7 +7,7 @@
 }
 
 header{
-	background-color: #2A5E88
+	background-color: #2A5E88;
 }
 
 h1 a{
@@ -25,9 +25,13 @@ h1 a:hover{
 	color:#87CEEB;
 }
 
+header img{
+	margin: 1rem 0px 1rem 0px;
+}
 .flex-header{
 	display:flex;
 	justify-content: space-between;	
+	align-items: center;
 }
 
 .float-right{
@@ -43,8 +47,6 @@ nav ul li a{
 	color:white;
 	font-family: Montserrat;
 	margin: 1rem;
-	display: flex;
-	align-items: center;
 }
 
 nav ul li a:hover{
