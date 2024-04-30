@@ -6,7 +6,7 @@
 	margin: 0 auto;
 }
 
-header{
+header, footer{
 	background-color: #2A5E88;
 }
 
@@ -59,3 +59,50 @@ nav ul li a:hover{
 header video{
 	width: 100%;
 }
+
+footer p, footer address{
+	font-family: Montserrat;
+	color: white;
+	font-style: none;
+}
+
+footer div{
+	padding: 1rem;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+}
+
+.flex-footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer a{
+	text-decoration: none;
+	font-family: Montserrat;
+	color:white
+}
+
+address{
+	font-style: normal;
+}
+
+.show-on-mobile{
+	display: none !important; 
+}
+
+@media screen and (max-width: 960px)
+{
+	.show-on-mobile{
+		display: block !important;
+	}
+
+	.hide-on-mobile{
+		display: none !important;
+	}
+}
+
