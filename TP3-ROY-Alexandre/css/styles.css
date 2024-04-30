@@ -91,6 +91,35 @@ address{
 	font-style: normal;
 }
 
+.grid-accueil{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 1rem;
+	padding: 3rem;
+	background-color: white;
+}
+
+.grid-accueil p{
+	font-family: Hind;
+	color: white;
+	font-size: 3rem;
+	background-color: #2A5E88;
+	padding: 2rem;
+	text-align: center;
+}
+
+.grid-accueil div{
+	background-color: #87CEEB;
+}
+
+.grid-accueil img{
+	width: 100%;
+}
+
+.main-index{
+	background-color: #87CEEB;
+}
 .show-on-mobile{
 	display: none !important; 
 }
