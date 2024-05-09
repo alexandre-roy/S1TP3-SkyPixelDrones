@@ -23,31 +23,150 @@
 </head>
 
 <body>
-	<div class="container">
-		<header>
-			<div class="flex-header container">
-				<div class="flex-center">
-					<img src="img/logo-petit.png" alt="logo">
-					<h1><a href="index.html"><span>SkyPixel</span>Drones</a></h1>
-				</div>
-				<nav>
-					<ul class="hide-on-mobile">
-						<li><a href="catalogue.html">CATALOGUE</a></li>
-						<li><a href="commande.html">COMMANDE</a></li>
-						<li><a href="panier.html">PANIER</a></li>
-					</ul>
-					<img class="show-on-mobile" src="img/hamburger_icon.svg" alt="hamburger menu">
-				</nav>				
-			</div>				
-		</header>
-
-		<footer>
-			<div class="flex-footer container">
-				<address><strong>SkyPixelDrones&nbsp;-&nbsp;</strong>1225, rue des Forces spéciales</address>
-				<p>Réalisé par: ALEXANDRE ROY</p>
-				<a href="tel:18005552323">1 800 555-2323</a>
+	<header>
+		<div class="flex-header container">
+			<div class="flex-center">
+				<img src="img/logo-petit.png" alt="logo">
+				<h1><a href="index.html"><span>SkyPixel</span>Drones</a></h1>
 			</div>
-		</footer>
+			<nav>
+				<ul class="hide-on-mobile">
+					<li><a href="catalogue.html">CATALOGUE</a></li>
+					<li><a href="commande.html">COMMANDE</a></li>
+					<li><a href="panier.html">PANIER</a></li>
+				</ul>
+				<img class="show-on-mobile" src="img/hamburger_icon.svg" alt="hamburger menu">
+			</nav>
+		</div>
+	</header>
+
+	<main class="main-catalogue container">
+		<p class="nav-catalogue"><a href="index.html">Accueil</a> <span> > Commande</span></p>
+
+		<h1>COMMANDE</h1>
+
+		<h2>DEMANDE DE RÉSERVATION POUR UN SERVICE</h2>
+
+		<h3 class="requis-text"><span class="red-text">*</span>Ces champs sont requis</h3>
+
+		<form id="frm-reservation" action="confirmation.html">
+
+			<div class="grid-formulaire container">
+
+				<fieldset class="grid-formulaire">
+					<legend>1. Renseignements sur le client</legend>
+
+					<div>
+						<label for="txtprenom">Prénom<span class="red-text">*</span></label>
+						<input type="text" name="txtprenom" required>
+					</div>
+
+					<div>
+						<label for="ntxtom">Nom<span class="red-text">*</span></label>
+						<input type="text" name="txtnom" required>
+					</div>
+
+					<div class="grid-area-2x1 grid-formulaire">
+						<label for="mailcourriel">Courriel<span class="red-text">*</span></label>
+						<input class="grid-area-2x1" type="email" name="mailcourriel" placeholder="courriel@blabla.com" required>
+					</div>
+
+					<div>
+						<label for="txttelephone">Téléphone<span class="red-text">*</span></label>
+						<input type="text" name="txttelephone" placeholder="123 456-7890" required>
+					</div>
+
+					<div>
+						<label for="comm">Moyen de comm. préféré</label>
+						<div>
+							<input type="radio" name="comm" id="tel" value="tel" checked>
+							<label for="tel">Par téléphone</label>
+						</div>
+
+						<div>
+							<input type="radio" name="comm" id="texto" value="texto">
+							<label for="texto">Par texto</label>
+						</div>
+
+						<div>
+							<input type="radio" name="comm" id="mail" value="mail">
+							<label for="mail">Par courriel</label>
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset class="grid-formulaire">
+					<legend>2. Renseignements sur le lieu (tournage / pilotage)</legend>
+
+					<div>
+						<label for="txtadresse">Adresse<span class="red-text">*</span></label>
+						<input type="text" name="txtadresse" required>
+					</div>
+
+					<div>
+						<label for="txtappt">Appt.</label>
+						<input type="text" name="txtappt">
+					</div>
+
+					<div>
+						<label for="txtville">Ville<span class="red-text">*</span></label>
+						<input type="text" name="txtville" required>
+					</div>
+
+					<div>
+						<label for="txtcode">Code post.<span class="red-text">*</span></label>
+						<input type="text" name="txtcode" placeholder="ex. A1B 2C3" required>
+					</div>
+
+					<div>
+						<label for="selhorraire">Plage Horraire souhaitée<span class="red-text">*</span></label>
+						<select name="selhorraire" required>
+							<option value="9:30-12:00" selected>9 h 30 à 12 h 00</option>
+							<option value="13:30-16:00">13 h 30 à 16 h 00</option>
+							<option value="19:30-21:00">19 h 30 à 21 h 00</option>
+							<option value="21:30-00:00">21 h 30 à 00 h 00</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="nbrpersonnes">Nombre de personnes<span class="red-text">*</span></label>
+						<input type="number" name="nbrpersonnes" min="1" max="4" required>
+					</div>
+				</fieldset>
+
+				<fieldset class="grid-formulaire grid-area-2x1">
+					<legend>Vos commentaires</legend>
+
+					<div class="grid-area-2x1 grid-formulaire">
+						<textarea name="txtcommentaire" maxlength="145" placeholder="Vous pouvez déposer vos commentaires ici (max 150 char.)"></textarea>
+					</div>
+
+					<div class="last-row grid-area-2x1">
+						<div>
+							<input type="checkbox" name="ckbinfoletrre">
+							<label for="ckbinfolettre">Je désire m'inscrire à l'infolettre</label>
+						</div>
+	
+						<div>
+							<input class="btn-soumettre" type="submit" value="Soumettre">
+						</div>
+					</div>					
+				</fieldset>
+
+			</div>
+		</form>
+	</main>
+
+
+	<footer>
+		<div class="flex-footer container">
+			<address><strong>SkyPixelDrones&nbsp;-&nbsp;</strong>1225, rue des Forces spéciales</address>
+			<p>Réalisé par: ALEXANDRE ROY</p>
+			<a href="tel:18005552323">1 800 555-2323</a>
+		</div>
+	</footer>
 	</div>
 </body>
 

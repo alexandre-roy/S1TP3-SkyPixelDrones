@@ -61,6 +61,21 @@ header video{
 	width: 100%;
 }
 
+.zone-texte{
+	background-color:#623c74;
+	color: white;
+	font-family: 'Hind';
+	padding: 1rem;
+	margin: 1rem 0 1rem 0;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.zone-texte a{
+	color: white;
+	font-family: 'Hind';
+}
+
 footer p, footer address{
 	font-family: Montserrat;
 	color: white;
@@ -184,6 +199,16 @@ address{
 	padding: 1rem 0px 0px 4rem;
 }
 
+.requis-text{
+	font-family: Montserrat;
+	color: #2A5E88;
+	padding: 1rem 0px 0px 4rem;
+}
+
+.red-text{
+	color: red;
+}
+
 body{
 	background-color: #87CEEB;
 }
@@ -242,6 +267,64 @@ body{
 
 .carte{
 	border: 3px solid #87CEEB;
+}
+
+.grid-formulaire{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+#frm-reservation fieldset{
+	font-family: 'Hind';
+	background-color: lightgrey;
+	border: 3px solid #87CEEB;
+	border-radius: 2rem;
+	margin-bottom: 2rem;
+}
+
+#frm-reservation legend{
+	background-color: #623c74;
+	color: white;
+	padding: 0.5rem 1rem;
+	border: 3px solid #87CEEB;
+	border-radius: 2rem;
+}
+
+#frm-reservation{
+	display: flex;
+	justify-content: center;
+}
+
+#frm-reservation div{
+	margin: 0.5rem;
+}
+
+input{
+	padding: 0.3rem;
+}
+
+textarea{
+	min-width: 200%;
+	padding: 1rem;
+}
+
+.last-row{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-soumettre{
+	background-color: #623c74;
+	color: white;
+	padding: 0.5rem 1rem;
+	border: 3px solid #87CEEB;
+	border-radius: 2rem;
+}
+
+label{
+	color: #2A5E88;
+	font-family: 'Montserrat';
 }
 
 @media screen and (max-width: 960px){
