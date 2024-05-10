@@ -21,11 +21,11 @@ h1 a {
 }
 
 h1 span {
-	color: #87ceeb;
+	color: #8dcf6d;
 }
 
 h1 a:hover {
-	color: #87ceeb;
+	color: #8dcf6d;
 }
 
 header img {
@@ -55,7 +55,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	text-decoration: none;
-	color: #87ceeb;
+	color: #8dcf6d;
 	font-family: "Montserrat";
 	margin: 1rem;
 }
@@ -65,7 +65,7 @@ header video {
 }
 
 .zone-texte {
-	background-color: #623c74;
+	background-color: #216d5f;
 	color: white;
 	font-family: "Hind";
 	padding: 1rem;
@@ -107,7 +107,7 @@ footer a {
 }
 
 footer a:hover {
-	color: #87ceeb;
+	color: #8dcf6d;
 }
 
 address {
@@ -177,7 +177,7 @@ address {
 
 .main-catalogue p a {
 	text-decoration: none;
-	color: #87ceeb;
+	color: #8dcf6d;
 	font-family: Montserrat;
 }
 
@@ -220,7 +220,7 @@ address {
 }
 
 body {
-	background-color: #87ceeb;
+	background-color: #8dcf6d;
 }
 
 .grid-catalogue {
@@ -244,10 +244,15 @@ body {
 	justify-content: center;
 	margin: 0 2.5rem 1rem 2.5rem;
 	padding: 0.5rem;
-	background-color: #623c74;
+	background-color: #216d5f;
 	font-family: "Hind";
 	color: white;
 	border-radius: 1rem;
+	border: 2px solid #8dcf6d;
+}
+
+.boite a:hover {
+	color: #8dcf6d;
 }
 
 .photo-titre h3 {
@@ -276,7 +281,7 @@ body {
 }
 
 .carte {
-	border: 3px solid #87ceeb;
+	border: 3px solid #8dcf6d;
 }
 
 .grid-formulaire {
@@ -292,16 +297,16 @@ body {
 #frm-reservation fieldset {
 	font-family: "Hind";
 	background-color: lightgrey;
-	border: 3px solid #87ceeb;
+	border: 3px solid #8dcf6d;
 	border-radius: 2rem;
 	margin-bottom: 2rem;
 }
 
 #frm-reservation legend {
-	background-color: #623c74;
+	background-color: #216d5f;
 	color: white;
 	padding: 0.5rem 1rem;
-	border: 3px solid #87ceeb;
+	border: 3px solid #8dcf6d;
 	border-radius: 2rem;
 }
 
@@ -324,10 +329,10 @@ textarea {
 }
 
 .btn-soumettre {
-	background-color: #623c74;
+	background-color: #216d5f;
 	color: white;
 	padding: 0.5rem 1rem;
-	border: 3px solid #87ceeb;
+	border: 3px solid #8dcf6d;
 	border-radius: 2rem;
 }
 
@@ -345,12 +350,12 @@ label,
 	padding: 1rem;
 	margin: 2rem 4rem 4rem 4rem;
 	border-radius: 2rem;
-	border: 3px solid #87ceeb;
+	border: 3px solid #8dcf6d;
 }
 
 .grid-concours div {
 	border: 0.2rem solid white;
-	background-color: #623c74;
+	background-color: #216d5f;
 	font-family: "Hind";
 	border-radius: 2rem;
 }
@@ -378,6 +383,7 @@ label,
 	font-family: "Montserrat";
 	background-color: #2a5e88;
 	padding: 3rem;
+	line-height: 1.5rem;
 }
 
 .footer-confirm {
@@ -396,7 +402,7 @@ label,
 	display: flex;
 	justify-content: space-between;
 	font-size: 1rem;
-	background-color: #87ceeb;
+	background-color: #8dcf6d;
 	margin: 1rem 0px 1rem 4.5rem;
 	padding: 0px 0.5rem 0px 0.5rem;
 }
@@ -417,7 +423,7 @@ label,
 
 .facture {
 	font-family: "Hind";
-	background-color: #623c74;
+	background-color: #216d5f;
 	color: white;
 	padding: 2rem;
 	border-radius: 2rem;
@@ -448,8 +454,8 @@ aside {
 }
 
 .facture a:hover {
-	color: #87ceeb;
-	border: 2px solid #87ceeb;
+	color: #8dcf6d;
+	border: 2px solid #8dcf6d;
 }
 
 .total {
@@ -462,24 +468,11 @@ aside {
 	justify-content: center;
 }
 
-@media screen and (max-width: 960px) {
-	.show-on-mobile {
-		display: block !important;
-	}
-
-	.hide-on-mobile {
-		display: none !important;
-	}
+header video {
+	display: grid;
 }
 
-@media screen and (min-width: 1201px) {
-	.grid-accueil,
-	.grid-catalogue {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-}
-
-@media screen and (min-width: 961px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 	.grid-accueil,
 	.grid-catalogue {
 		grid-template-columns: 1fr 1fr 1fr;
@@ -488,8 +481,8 @@ aside {
 		grid-template-columns: 1fr;
 	}
 	.grid-area-1x1 {
-		grid-column: span 1 !important;
-		grid-row: span 1 !important;
+		grid-column: span 1;
+		grid-row: span 1;
 	}
 	textarea {
 		width: 100%;
@@ -499,7 +492,13 @@ aside {
 	}
 }
 
-@media screen and (min-width: 571px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
+	.show-on-mobile {
+		display: block !important;
+	}
+	.hide-on-mobile {
+		display: none !important;
+	}
 	.grid-accueil,
 	.grid-catalogue {
 		grid-template-columns: 1fr 1fr;
@@ -508,8 +507,8 @@ aside {
 		grid-template-columns: 1fr;
 	}
 	.grid-area-1x1 {
-		grid-column: span 1 !important;
-		grid-row: span 1 !important;
+		grid-column: span 1;
+		grid-row: span 1;
 	}
 	textarea {
 		width: 100%;
