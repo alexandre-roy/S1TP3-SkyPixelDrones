@@ -1,41 +1,44 @@
-*{ box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
 
-.container{
+.container {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-header, footer{
-	background-color: #2A5E88;
+header,
+footer {
+	background-color: #2a5e88;
 }
 
-h1 a{
+h1 a {
 	color: white;
-	font-family: Montserrat;
-	margin-left:1rem;
+	font-family: "Montserrat";
+	margin-left: 1rem;
 	text-decoration: none;
 }
 
-h1 span{
-	color: #87CEEB;
+h1 span {
+	color: #87ceeb;
 }
 
-h1 a:hover{
-	color:#87CEEB;
+h1 a:hover {
+	color: #87ceeb;
 }
 
-header img{
+header img {
 	margin: 1rem 0px 1rem 0px;
 }
 
-.flex-header{
-	display:flex;
-	justify-content: space-between;	
+.flex-header {
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }
 
-.float-right{
+.float-right {
 	float: right;
 }
 
@@ -43,75 +46,75 @@ nav ul li {
 	display: inline-block;
 }
 
-nav ul li a{
+nav ul li a {
 	text-decoration: none;
-	color:white;
-	font-family: Montserrat;
+	color: white;
+	font-family: "Montserrat";
 	margin: 1rem;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
 	text-decoration: none;
-	color:#87CEEB;
-	font-family: Montserrat;
+	color: #87ceeb;
+	font-family: "Montserrat";
 	margin: 1rem;
 }
 
-header video{
+header video {
 	width: 100%;
 }
 
-.zone-texte{
-	background-color:#623c74;
+.zone-texte {
+	background-color: #623c74;
 	color: white;
-	font-family: 'Hind';
+	font-family: "Hind";
 	padding: 1rem;
 	margin: 1rem 0 1rem 0;
 	font-size: 1.3rem;
 	text-align: center;
 }
 
-.zone-texte a{
+.zone-texte a {
 	color: white;
-	font-family: 'Hind';
+	font-family: "Hind";
 }
 
-footer p, footer address{
-	font-family: Montserrat;
+footer p,
+footer address {
+	font-family: "Montserrat";
 	color: white;
-	font-style: none;
 }
 
-footer div{
+footer div {
 	padding: 1rem;
 }
 
-.flex-center{
+.flex-center {
 	display: flex;
 	align-items: center;
 }
 
-.flex-footer{
+.flex-footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-footer a{
+footer a {
 	text-decoration: none;
-	font-family: Montserrat;
-	color:white
+	font-family: "Montserrat";
+	color: white;
 }
 
-footer a:hover{
-	color: #87CEEB;
+footer a:hover {
+	color: #87ceeb;
 }
 
-address{
+address {
 	font-style: normal;
 }
 
-.grid-accueil{
+.grid-accueil {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 1rem;
@@ -120,105 +123,107 @@ address{
 	list-style-type: none;
 }
 
-.grid-accueil p{
+.grid-accueil p {
 	font-family: Hind;
 	color: white;
 	font-size: 3rem;
-	background-color: #2A5E88;
+	background-color: #2a5e88;
 	padding: 10rem 3rem;
 	text-align: center;
 	margin: 0px;
 }
 
-.grid-accueil img, .grid-accueil video, .grid-concours video{
+.grid-accueil img,
+.grid-accueil video,
+.grid-concours video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
 }
 
-.grid-area-2x2{
+.grid-area-2x2 {
 	grid-column: span 2;
-	grid-row: span 2; 
+	grid-row: span 2;
 }
 
-.montagnes{
+.montagnes {
 	grid-column: 3/5;
 	grid-row: 1/3;
 }
 
-.grid-area-2x1{
+.grid-area-2x1 {
 	grid-column: span 2;
 }
 
-.grid-area-1x2{
+.grid-area-1x2 {
 	grid-row: span 2;
 }
 
-.red{
+.red {
 	background-color: darkred;
 	grid-column: 1/2;
-	grid-row: 3/4
+	grid-row: 3/4;
 }
 
-.show-on-mobile{
-	display: none !important; 
+.show-on-mobile {
+	display: none !important;
 }
 
-.main-catalogue{
+.main-catalogue {
 	background-color: white;
 	padding-bottom: 0.1rem;
 }
 
-.main-catalogue p a{
+.main-catalogue p a {
 	text-decoration: none;
-	color: #87CEEB;
+	color: #87ceeb;
 	font-family: Montserrat;
 }
 
-.main-catalogue p a:hover{
-	color: #2A5E88;
+.main-catalogue p a:hover {
+	color: #2a5e88;
 }
 
-.main-catalogue p span{
+.main-catalogue p span {
 	font-family: Montserrat;
-	color:#2A5E88
+	color: #2a5e88;
 }
 
-.nav-catalogue{
+.nav-catalogue {
 	margin-top: 0px;
 	padding: 2rem 1rem;
 }
 
-.main-catalogue h1{
+.main-catalogue h1 {
 	font-family: Montserrat;
 	font-size: 3rem;
-	color: #2A5E88;
+	color: #2a5e88;
 	padding-left: 1rem;
 }
 
-.main-catalogue h2{
+.main-catalogue h2 {
 	font-family: Montserrat;
-	color: #2A5E88;
+	color: #2a5e88;
 	font-size: 2rem;
 	padding: 1rem 0px 0px 4rem;
 }
 
-.requis-text{
+.requis-text {
 	font-family: Montserrat;
-	color: #2A5E88;
+	color: #2a5e88;
 	padding: 1rem 0px 0px 4rem;
 }
 
-.red-text{
+.red-text {
 	color: red;
 }
 
-body{
-	background-color: #87CEEB;
+body {
+	background-color: #87ceeb;
 }
 
-.grid-catalogue{
+.grid-catalogue {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 2rem;
@@ -226,113 +231,114 @@ body{
 	background-color: white;
 }
 
-.boite-text{
-	font-family: 'Hind';
+.boite-text {
+	font-family: "Hind";
 	text-align: center;
 	margin: 0px;
 	padding: 2rem 1rem 1rem 1rem;
 }
 
-.boite a{
+.boite a {
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	margin: 0 2.5rem 1rem 2.5rem;
 	padding: 0.5rem;
 	background-color: #623c74;
-	font-family: 'Hind';
+	font-family: "Hind";
 	color: white;
 	border-radius: 1rem;
 }
 
-.photo-titre h3{
+.photo-titre h3 {
 	display: flex;
-	background-color: #2A5E88;
+	background-color: #2a5e88;
 	color: white;
 	margin: -4px 0px;
 	padding: 0.5rem;
 	justify-content: center;
-	font-family: 'Hind';
+	font-family: "Hind";
 }
 
-.photo-titre img{
+.photo-titre img {
 	width: 100%;
 	height: 7rem;
 	object-fit: cover;
 	object-position: center;
 }
 
-.prix{
+.prix {
 	font-size: 3rem;
-	font-family: 'Hind';
+	font-family: "Hind";
 	padding-top: 0px;
 	text-align: center;
 	margin: 0px 0px 1rem 0px;
 }
 
-.carte{
-	border: 3px solid #87CEEB;
+.carte {
+	border: 3px solid #87ceeb;
 }
 
-.grid-formulaire{
+.grid-formulaire {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
 }
 
-#frm-reservation fieldset{
-	font-family: 'Hind';
+#frm-reservation fieldset {
+	font-family: "Hind";
 	background-color: lightgrey;
-	border: 3px solid #87CEEB;
+	border: 3px solid #87ceeb;
 	border-radius: 2rem;
 	margin-bottom: 2rem;
 }
 
-#frm-reservation legend{
+#frm-reservation legend {
 	background-color: #623c74;
 	color: white;
 	padding: 0.5rem 1rem;
-	border: 3px solid #87CEEB;
+	border: 3px solid #87ceeb;
 	border-radius: 2rem;
 }
 
-#frm-reservation{
+#frm-reservation {
 	display: flex;
 	justify-content: center;
 }
 
-#frm-reservation div{
+#frm-reservation div {
 	margin: 0.5rem;
 }
 
-input{
+input {
 	padding: 0.3rem;
 }
 
-textarea{
+textarea {
 	width: 200%;
 	padding: 1rem;
 }
 
-.last-row{
+.last-row {
 	display: flex;
 	justify-content: space-between;
 }
 
-.btn-soumettre{
+.btn-soumettre {
 	background-color: #623c74;
 	color: white;
 	padding: 0.5rem 1rem;
-	border: 3px solid #87CEEB;
+	border: 3px solid #87ceeb;
 	border-radius: 2rem;
 }
 
-label{
-	color: #2A5E88;
-	font-family: 'Montserrat';
+label,
+#frm-reservation p {
+	color: #2a5e88;
+	font-family: "Montserrat";
 }
 
-.grid-concours{
+.grid-concours {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: 1rem;
@@ -340,192 +346,191 @@ label{
 	padding: 1rem;
 	margin: 2rem 4rem 4rem 4rem;
 	border-radius: 2rem;
-	border: 3px solid #87CEEB;
+	border: 3px solid #87ceeb;
 }
 
-.grid-concours div{
+.grid-concours div {
 	border: 0.2rem solid white;
 	background-color: #623c74;
-	font-family: 'Hind';
+	font-family: "Hind";
 	border-radius: 2rem;
 }
 
-.concours-text p{
+.concours-text p {
 	text-align: center;
 	color: white;
 	font-size: 1.8rem;
 	padding: 0 1.5rem 0 1.5rem;
 }
 
-.grid-concours video{
+.grid-concours video {
 	border-radius: 2rem;
 }
 
-.concours-text h4{
+.concours-text h4 {
 	font-size: 2.5rem;
 	color: white;
 	text-align: center;
 	margin-bottom: 0px;
 }
 
-.confirmation{
+.confirmation {
 	color: white;
-	font-family: 'Montserrat';
-	background-color: #2A5E88;
+	font-family: "Montserrat";
+	background-color: #2a5e88;
 	padding: 3rem;
 }
 
-.footer-confirm{
+.footer-confirm {
 	margin-top: 11rem;
 }
 
-.liste-panier, .liste-panier ul{
+.liste-panier,
+.liste-panier ul {
 	list-style-type: none;
-	font-family: 'Hind';
-	color: #2A5E88;
+	font-family: "Hind";
+	color: #2a5e88;
 	font-size: 2rem;
 }
 
-
-.li-panier{
+.li-panier {
 	display: flex;
 	justify-content: space-between;
 	font-size: 1rem;
-	background-color: #87CEEB;
+	background-color: #87ceeb;
 	margin: 1rem 0px 1rem 4.5rem;
 	padding: 0px 0.5rem 0px 0.5rem;
 }
 
-.li-panier:hover{
+.li-panier:hover {
 	background-color: lightgrey;
 }
 
-.li-panier a{
+.li-panier a {
 	text-decoration: none;
 }
-.grid-panier{
+.grid-panier {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	gap: 2rem;
 	margin: 2rem;
 }
 
-.facture{
-	font-family: 'Hind';
+.facture {
+	font-family: "Hind";
 	background-color: #623c74;
 	color: white;
 	padding: 2rem;
-	border-radius: 2rem;	
+	border-radius: 2rem;
 }
 
-.facture div div{
+.facture div div {
 	justify-content: space-between;
 	display: flex;
 }
 
-aside{
+aside {
 	display: flex;
 	align-items: center;
 }
-.facture h2{
+.facture h2 {
 	color: white;
 	padding: 0px;
 	margin: 0px;
 }
 
-.facture a{
+.facture a {
 	text-decoration: none;
 	color: white;
-	background-color: #2A5E88;
+	background-color: #2a5e88;
 	padding: 0.5rem;
 	border: 2px solid white;
 	border-radius: 2rem;
 }
 
-.facture a:hover{
-	color: #87CEEB;
-	border: 2px solid #87CEEB;
+.facture a:hover {
+	color: #87ceeb;
+	border: 2px solid #87ceeb;
 }
 
-.total{
+.total {
 	border-bottom: 5px double white;
 	margin-bottom: 1.5rem;
-
 }
 
-.btn-facture{
+.btn-facture {
 	display: flex;
 	justify-content: center;
 }
 
-@media screen and (max-width: 960px){
-
-	.show-on-mobile{
+@media screen and (max-width: 960px) {
+	.show-on-mobile {
 		display: block !important;
 	}
 
-	.hide-on-mobile{
+	.hide-on-mobile {
 		display: none !important;
 	}
 }
 
-@media screen and (min-width: 1201px){
-	.grid-accueil, .grid-catalogue{
+@media screen and (min-width: 1201px) {
+	.grid-accueil,
+	.grid-catalogue {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-	} 
+	}
 }
 
-@media screen and (min-width: 961px) and (max-width: 1200px){
-	.grid-accueil, .grid-catalogue{
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+	.grid-accueil,
+	.grid-catalogue {
 		grid-template-columns: 1fr 1fr 1fr;
-	} 
-	.grid-formulaire{
+	}
+	.grid-formulaire {
 		grid-template-columns: 1fr;
 	}
-	textarea{
+	textarea {
 		width: 100%;
 	}
-	.grid-panier{
+	.grid-panier {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
-@media screen and (min-width: 571px) and (max-width: 960px){
-	.grid-accueil, .grid-catalogue{
+@media screen and (min-width: 571px) and (max-width: 960px) {
+	.grid-accueil,
+	.grid-catalogue {
 		grid-template-columns: 1fr 1fr;
-	} 
-	.grid-formulaire{
+	}
+	.grid-formulaire {
 		grid-template-columns: 1fr;
 	}
 
-	textarea{
+	textarea {
 		width: 100%;
 	}
-	.grid-panier{
+	.grid-panier {
 		grid-template-columns: 1fr;
 	}
-	aside{
+	aside {
 		justify-content: center;
 	}
 }
 
-@media screen and (max-width: 570px){
-	.grid-accueil, .grid-catalogue{
-		grid-template-columns: 1fr;
-	} 
-	.grid-formulaire{
+@media screen and (max-width: 570px) {
+	.grid-accueil,
+	.grid-catalogue {
 		grid-template-columns: 1fr;
 	}
-	textarea{
+	.grid-formulaire {
+		grid-template-columns: 1fr;
+	}
+	textarea {
 		width: 100%;
 	}
-	.grid-panier{
+	.grid-panier {
 		grid-template-columns: 1fr;
 	}
-	aside{
+	aside {
 		justify-content: center;
 	}
-	
 }
-
-

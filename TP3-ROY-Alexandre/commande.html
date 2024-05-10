@@ -2,12 +2,12 @@
 <html lang="fr">
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<title>Commande - SkyPixelDrones</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="icon" href="favicon.ico">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +62,7 @@
 					</div>
 
 					<div>
-						<label for="ntxtom">Nom<span class="red-text">*</span></label>
+						<label for="txtnom">Nom<span class="red-text">*</span></label>
 						<input type="text" name="txtnom" id="txtnom" required>
 					</div>
 
@@ -78,7 +78,7 @@
 					</div>
 
 					<div>
-						<label for="comm">Moyen de comm. préféré</label>
+						<p>Moyen de comm. préféré</p>
 						<div>
 							<input type="radio" name="comm" id="tel" value="tel" checked>
 							<label for="tel">Par téléphone</label>
@@ -123,8 +123,8 @@
 
 					<div>
 						<label for="selhorraire">Plage Horraire souhaitée<span class="red-text">*</span></label>
-						<select name="selhorraire" id="selhorraire" required>
-							<option value="9:30-12:00" selected>9 h 30 à 12 h 00</option>
+						<select name="selhorraire" id="selhorraire">
+							<option value="9:30-12:00">9 h 30 à 12 h 00</option>
 							<option value="13:30-16:00">13 h 30 à 16 h 00</option>
 							<option value="19:30-21:00">19 h 30 à 21 h 00</option>
 							<option value="21:30-00:00">21 h 30 à 00 h 00</option>
@@ -147,7 +147,7 @@
 
 					<div class="last-row grid-area-2x1">
 						<div>
-							<input type="checkbox" name="ckbinfoletrre" id="ckbinfoletrre">
+							<input type="checkbox" name="ckbinfolettre" id="ckbinfolettre">
 							<label for="ckbinfolettre">Je désire m'inscrire à l'infolettre</label>
 						</div>
 
@@ -167,7 +167,10 @@
 			</div>
 
 			<div>
-				<video autoplay loop muted <source src="medias/match1.mp4" alt="match"></video>
+				<video autoplay loop muted>
+					<source src="medias/match1.mp4">
+					Votre navigateur ne supporte pas la balise vidéo.
+				</video>
 			</div>
 		</div>
 
