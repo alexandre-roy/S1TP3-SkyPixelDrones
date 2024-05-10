@@ -285,6 +285,10 @@ body {
 	gap: 1rem;
 }
 
+#frm-reservation {
+	margin: 0px 4rem 0px 4rem;
+}
+
 #frm-reservation fieldset {
 	font-family: "Hind";
 	background-color: lightgrey;
@@ -299,11 +303,6 @@ body {
 	padding: 0.5rem 1rem;
 	border: 3px solid #87ceeb;
 	border-radius: 2rem;
-}
-
-#frm-reservation {
-	display: flex;
-	justify-content: center;
 }
 
 #frm-reservation div {
@@ -488,6 +487,10 @@ aside {
 	.grid-formulaire {
 		grid-template-columns: 1fr;
 	}
+	.grid-area-1x1 {
+		grid-column: span 1 !important;
+		grid-row: span 1 !important;
+	}
 	textarea {
 		width: 100%;
 	}
@@ -504,7 +507,10 @@ aside {
 	.grid-formulaire {
 		grid-template-columns: 1fr;
 	}
-
+	.grid-area-1x1 {
+		grid-column: span 1 !important;
+		grid-row: span 1 !important;
+	}
 	textarea {
 		width: 100%;
 	}
@@ -523,6 +529,10 @@ aside {
 	}
 	.grid-formulaire {
 		grid-template-columns: 1fr;
+	}
+	.grid-area-1x1 {
+		grid-column: span 1 !important;
+		grid-row: span 1 !important;
 	}
 	textarea {
 		width: 100%;

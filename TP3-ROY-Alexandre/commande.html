@@ -49,98 +49,96 @@
 
 		<h3 class="requis-text"><span class="red-text">* </span>Ces champs sont requis</h3>
 
-		<form method="get" id="frm-reservation" action="confirmation.html">
+		<form method="get" id="frm-reservation" action="confirmation.html" class="grid-formulaire">
 
-			<div class="grid-formulaire container">
+			<fieldset class="grid-formulaire">
+				<legend>1. Renseignements sur le client</legend>
 
-				<fieldset class="grid-formulaire">
-					<legend>1. Renseignements sur le client</legend>
+				<div>
+					<label for="txtprenom">Prénom<span class="red-text">*</span></label>
+					<input type="text" name="txtprenom" id="txtprenom" required>
+				</div>
 
+				<div>
+					<label for="txtnom">Nom<span class="red-text">*</span></label>
+					<input type="text" name="txtnom" id="txtnom" required>
+				</div>
+
+				<div class="grid-area-2x1 grid-formulaire">
+					<label for="mailcourriel">Courriel<span class="red-text">*</span></label>
+					<input class="grid-area-2x1" type="email" name="mailcourriel" id="mailcourriel"
+						placeholder="courriel@blabla.com" required>
+				</div>
+
+				<div>
+					<label for="txttelephone">Téléphone<span class="red-text">*</span></label>
+					<input type="text" name="txttelephone" id="txttelephone" placeholder="123 456-7890" required>
+				</div>
+
+				<div>
+					<p>Moyen de comm. préféré</p>
 					<div>
-						<label for="txtprenom">Prénom<span class="red-text">*</span></label>
-						<input type="text" name="txtprenom" id="txtprenom" required>
-					</div>
-
-					<div>
-						<label for="txtnom">Nom<span class="red-text">*</span></label>
-						<input type="text" name="txtnom" id="txtnom" required>
-					</div>
-
-					<div class="grid-area-2x1 grid-formulaire">
-						<label for="mailcourriel">Courriel<span class="red-text">*</span></label>
-						<input class="grid-area-2x1" type="email" name="mailcourriel" id="mailcourriel"
-							placeholder="courriel@blabla.com" required>
-					</div>
-
-					<div>
-						<label for="txttelephone">Téléphone<span class="red-text">*</span></label>
-						<input type="text" name="txttelephone" id="txttelephone" placeholder="123 456-7890" required>
-					</div>
-
-					<div>
-						<p>Moyen de comm. préféré</p>
-						<div>
-							<input type="radio" name="comm" id="tel" value="tel" checked>
-							<label for="tel">Par téléphone</label>
-						</div>
-
-						<div>
-							<input type="radio" name="comm" id="texto" value="texto">
-							<label for="texto">Par texto</label>
-						</div>
-
-						<div>
-							<input type="radio" name="comm" id="mail" value="mail">
-							<label for="mail">Par courriel</label>
-						</div>
-
-					</div>
-
-				</fieldset>
-
-				<fieldset class="grid-formulaire">
-					<legend>2. Renseignements sur le lieu (tournage / pilotage)</legend>
-
-					<div>
-						<label for="txtadresse">Adresse<span class="red-text">*</span></label>
-						<input type="text" name="txtadresse" id="txtadresse" required>
+						<input type="radio" name="comm" id="tel" value="tel" checked>
+						<label for="tel">Par téléphone</label>
 					</div>
 
 					<div>
-						<label for="txtappt">Appt.</label>
-						<input type="text" name="txtappt" id="txtappt">
+						<input type="radio" name="comm" id="texto" value="texto">
+						<label for="texto">Par texto</label>
 					</div>
 
 					<div>
-						<label for="txtville">Ville<span class="red-text">*</span></label>
-						<input type="text" name="txtville" id="txtville" required>
+						<input type="radio" name="comm" id="mail" value="mail">
+						<label for="mail">Par courriel</label>
 					</div>
+				</div>
+			</fieldset>
 
-					<div>
-						<label for="txtcode">Code post.<span class="red-text">*</span></label>
-						<input type="text" name="txtcode" id="txtcode" placeholder="ex. A1B 2C3" required>
-					</div>
 
-					<div>
-						<label for="selhorraire">Plage Horraire souhaitée<span class="red-text">*</span></label>
-						<select name="selhorraire" id="selhorraire">
-							<option value="9:30-12:00">9 h 30 à 12 h 00</option>
-							<option value="13:30-16:00">13 h 30 à 16 h 00</option>
-							<option value="19:30-21:00">19 h 30 à 21 h 00</option>
-							<option value="21:30-00:00">21 h 30 à 00 h 00</option>
-						</select>
-					</div>
+			<fieldset class="grid-formulaire">
+				<legend>2. Renseignements sur le lieu (tournage / pilotage)</legend>
 
-					<div>
-						<label for="nbrpersonnes">Nombre de personnes<span class="red-text">*</span></label>
-						<input type="number" name="nbrpersonnes" id="nbrpersonnes" min="1" max="4" required>
-					</div>
-				</fieldset>
+				<div>
+					<label for="txtadresse">Adresse<span class="red-text">*</span></label>
+					<input type="text" name="txtadresse" id="txtadresse" required>
+				</div>
 
-				<fieldset class="grid-formulaire grid-area-2x1">
+				<div>
+					<label for="txtappt">Appt.</label>
+					<input type="text" name="txtappt" id="txtappt">
+				</div>
+
+				<div>
+					<label for="txtville">Ville<span class="red-text">*</span></label>
+					<input type="text" name="txtville" id="txtville" required>
+				</div>
+
+				<div>
+					<label for="txtcode">Code post.<span class="red-text">*</span></label>
+					<input type="text" name="txtcode" id="txtcode" placeholder="ex. A1B 2C3" required>
+				</div>
+
+				<div>
+					<label for="selhorraire">Plage Horraire souhaitée<span class="red-text">*</span></label>
+					<select name="selhorraire" id="selhorraire">
+						<option value="9:30-12:00">9 h 30 à 12 h 00</option>
+						<option value="13:30-16:00">13 h 30 à 16 h 00</option>
+						<option value="19:30-21:00">19 h 30 à 21 h 00</option>
+						<option value="21:30-00:00">21 h 30 à 00 h 00</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="nbrpersonnes">Nombre de personnes<span class="red-text">*</span></label>
+					<input type="number" name="nbrpersonnes" id="nbrpersonnes" min="1" max="4" required>
+				</div>
+			</fieldset>
+
+			<div class="grid-area-2x1 grid-area-1x1">
+				<fieldset>
 					<legend>Vos commentaires</legend>
 
-					<div class="grid-area-2x1 grid-formulaire">
+					<div class="grid-formulaire">
 						<textarea name="txtcommentaire" maxlength="145" id="txtcommentaire"
 							placeholder="Vous pouvez déposer vos commentaires ici (max 150 char.)"></textarea>
 					</div>
