@@ -103,6 +103,10 @@ footer a{
 	color:white
 }
 
+footer a:hover{
+	color: #87CEEB;
+}
+
 address{
 	font-style: normal;
 }
@@ -126,7 +130,7 @@ address{
 	margin: 0px;
 }
 
-.grid-accueil img, .grid-accueil video{
+.grid-accueil img, .grid-accueil video, .grid-concours video{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -163,6 +167,7 @@ address{
 
 .main-catalogue{
 	background-color: white;
+	padding-bottom: 0.1rem;
 }
 
 .main-catalogue p a{
@@ -305,7 +310,7 @@ input{
 }
 
 textarea{
-	min-width: 200%;
+	width: 200%;
 	padding: 1rem;
 }
 
@@ -325,6 +330,111 @@ textarea{
 label{
 	color: #2A5E88;
 	font-family: 'Montserrat';
+}
+
+.grid-concours{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	background-color: lightgray;
+	padding: 1rem;
+	margin: 2rem 4rem 4rem 4rem;
+	border-radius: 2rem;
+	border: 3px solid #87CEEB;
+}
+
+.grid-concours div{
+	border: 0.2rem solid white;
+	background-color: #623c74;
+	font-family: 'Hind';
+	border-radius: 2rem;
+}
+
+.concours-text p{
+	text-align: center;
+	color: white;
+	font-size: 1.8rem;
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.grid-concours video{
+	border-radius: 2rem;
+}
+
+.concours-text h4{
+	font-size: 2.5rem;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.confirmation{
+	color: white;
+	font-family: 'Montserrat';
+	background-color: #2A5E88;
+	padding: 3rem;
+}
+
+.footer-confirm{
+	margin-top: 11rem;
+}
+
+.liste-panier, .liste-panier ul{
+	list-style-type: none;
+	font-family: 'Hind';
+}
+
+.liste-panier ul li{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5rem;
+}
+
+.grid-panier{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 2rem;
+	margin: 2rem;
+}
+
+.facture{
+	font-family: 'Hind';
+	background-color: #623c74;
+	color: white;
+	padding: 2rem;
+	border-radius: 2rem;	
+}
+
+.facture div div{
+	justify-content: space-between;
+	display: flex;	
+}
+
+.facture h2{
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+.facture a{
+	text-decoration: none;
+	color: white;
+	background-color: #2A5E88;
+	padding: 0.2rem 0.5rem;
+	border: 2px solid white;
+	border-radius: 2rem;
+	margin-left: 2rem;
+}
+
+.facture a:hover{
+	color: #87CEEB;
+	border: 2px solid #87CEEB;
+}
+
+.total{
+	border-bottom: 5px double white;
+	margin-bottom: 1.5rem;
+
 }
 
 @media screen and (max-width: 960px){
@@ -348,18 +458,37 @@ label{
 	.grid-accueil, .grid-catalogue{
 		grid-template-columns: 1fr 1fr 1fr;
 	} 
+	.grid-formulaire{
+		grid-template-columns: 1fr;
+	}
+	textarea{
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 571px) and (max-width: 960px){
 	.grid-accueil, .grid-catalogue{
 		grid-template-columns: 1fr 1fr;
 	} 
+	.grid-formulaire{
+		grid-template-columns: 1fr;
+	}
+
+	textarea{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 570px){
 	.grid-accueil, .grid-catalogue{
 		grid-template-columns: 1fr;
 	} 
+	.grid-formulaire{
+		grid-template-columns: 1fr;
+	}
+	textarea{
+		width: 100%;
+	}
 }
 
 

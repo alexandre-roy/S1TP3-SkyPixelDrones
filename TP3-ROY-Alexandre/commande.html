@@ -47,9 +47,9 @@
 
 		<h2>DEMANDE DE RÉSERVATION POUR UN SERVICE</h2>
 
-		<h3 class="requis-text"><span class="red-text">*</span>Ces champs sont requis</h3>
+		<h3 class="requis-text"><span class="red-text">* </span>Ces champs sont requis</h3>
 
-		<form id="frm-reservation" action="confirmation.html">
+		<form method="post" id="frm-reservation" action="confirmation.html">
 
 			<div class="grid-formulaire container">
 
@@ -58,22 +58,22 @@
 
 					<div>
 						<label for="txtprenom">Prénom<span class="red-text">*</span></label>
-						<input type="text" name="txtprenom" required>
+						<input type="text" name="txtprenom" id="txtprenom" required>
 					</div>
 
 					<div>
 						<label for="ntxtom">Nom<span class="red-text">*</span></label>
-						<input type="text" name="txtnom" required>
+						<input type="text" name="txtnom" id="txtnom" required>
 					</div>
 
 					<div class="grid-area-2x1 grid-formulaire">
 						<label for="mailcourriel">Courriel<span class="red-text">*</span></label>
-						<input class="grid-area-2x1" type="email" name="mailcourriel" placeholder="courriel@blabla.com" required>
+						<input class="grid-area-2x1" type="email" name="mailcourriel" id="mailcourriel" placeholder="courriel@blabla.com" required>
 					</div>
 
 					<div>
 						<label for="txttelephone">Téléphone<span class="red-text">*</span></label>
-						<input type="text" name="txttelephone" placeholder="123 456-7890" required>
+						<input type="text" name="txttelephone" id="txttelephone" placeholder="123 456-7890" required>
 					</div>
 
 					<div>
@@ -102,27 +102,27 @@
 
 					<div>
 						<label for="txtadresse">Adresse<span class="red-text">*</span></label>
-						<input type="text" name="txtadresse" required>
+						<input type="text" name="txtadresse" id="txtadresse" required>
 					</div>
 
 					<div>
 						<label for="txtappt">Appt.</label>
-						<input type="text" name="txtappt">
+						<input type="text" name="txtappt" id="txtappt">
 					</div>
 
 					<div>
 						<label for="txtville">Ville<span class="red-text">*</span></label>
-						<input type="text" name="txtville" required>
+						<input type="text" name="txtville" id="txtville" required>
 					</div>
 
 					<div>
 						<label for="txtcode">Code post.<span class="red-text">*</span></label>
-						<input type="text" name="txtcode" placeholder="ex. A1B 2C3" required>
+						<input type="text" name="txtcode" id="txtcode" placeholder="ex. A1B 2C3" required>
 					</div>
 
 					<div>
 						<label for="selhorraire">Plage Horraire souhaitée<span class="red-text">*</span></label>
-						<select name="selhorraire" required>
+						<select name="selhorraire" id="selhorraire" required>
 							<option value="9:30-12:00" selected>9 h 30 à 12 h 00</option>
 							<option value="13:30-16:00">13 h 30 à 16 h 00</option>
 							<option value="19:30-21:00">19 h 30 à 21 h 00</option>
@@ -132,7 +132,7 @@
 
 					<div>
 						<label for="nbrpersonnes">Nombre de personnes<span class="red-text">*</span></label>
-						<input type="number" name="nbrpersonnes" min="1" max="4" required>
+						<input type="number" name="nbrpersonnes" id="nbrpersonnes" min="1" max="4" required>
 					</div>
 				</fieldset>
 
@@ -140,12 +140,12 @@
 					<legend>Vos commentaires</legend>
 
 					<div class="grid-area-2x1 grid-formulaire">
-						<textarea name="txtcommentaire" maxlength="145" placeholder="Vous pouvez déposer vos commentaires ici (max 150 char.)"></textarea>
+						<textarea name="txtcommentaire" maxlength="145" id="txtcommentaire" placeholder="Vous pouvez déposer vos commentaires ici (max 150 char.)"></textarea>
 					</div>
 
 					<div class="last-row grid-area-2x1">
 						<div>
-							<input type="checkbox" name="ckbinfoletrre">
+							<input type="checkbox" name="ckbinfoletrre" id="ckbinfoletrre">
 							<label for="ckbinfolettre">Je désire m'inscrire à l'infolettre</label>
 						</div>
 	
@@ -153,10 +153,22 @@
 							<input class="btn-soumettre" type="submit" value="Soumettre">
 						</div>
 					</div>					
-				</fieldset>
-
-			</div>
+				</fieldset>	
+			</div>		
 		</form>
+
+		<div class="grid-concours">
+			<div class="concours-text">
+				<h4>CONCOURS</h4>
+				<p>Inscris-toi pour une formation de pilotage et cours la chance de gagner des billets pour aller voir les jeux olympiques au Brézil, cet été!</p>
+			</div>
+
+			<div>
+				<video autoplay loop muted <source src="medias/match1.mp4" alt="match"></video>
+			</div>
+		</div>
+
+	
 	</main>
 
 
@@ -167,7 +179,6 @@
 			<a href="tel:18005552323">1 800 555-2323</a>
 		</div>
 	</footer>
-	</div>
 </body>
 
 </html>

@@ -21,33 +21,118 @@
 		href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 </head>
-<body>
-	<div class="container">
-		<header>
-			<div class="flex-header container">
-				<div class="flex-center">
-					<img src="img/logo-petit.png" alt="logo">
-					<h1><a href="index.html"><span>SkyPixel</span>Drones</a></h1>
-				</div>
-				<nav>
-					<ul class="hide-on-mobile">
-						<li><a href="catalogue.html">CATALOGUE</a></li>
-						<li><a href="commande.html">COMMANDE</a></li>
-						<li><a href="panier.html">PANIER</a></li>
-					</ul>
-					<img class="show-on-mobile" src="img/hamburger_icon.svg" alt="hamburger menu">
-				</nav>				
-			</div>
-		</header>
 
-		<footer>
-			<div class="flex-footer container">
-				<address><strong>SkyPixelDrones&nbsp;-&nbsp;</strong>1225, rue des Forces spéciales</address>
-				<p>Réalisé par: ALEXANDRE ROY</p>
-				<a href="tel:18005552323">1 800 555-2323</a>
+<body>
+
+	<header>
+		<div class="flex-header container">
+			<div class="flex-center">
+				<img src="img/logo-petit.png" alt="logo">
+				<h1><a href="index.html"><span>SkyPixel</span>Drones</a></h1>
 			</div>
-		</footer>
-	</div>
+			<nav>
+				<ul class="hide-on-mobile">
+					<li><a href="catalogue.html">CATALOGUE</a></li>
+					<li><a href="commande.html">COMMANDE</a></li>
+					<li><a href="panier.html">PANIER</a></li>
+				</ul>
+				<img class="show-on-mobile" src="img/hamburger_icon.svg" alt="hamburger menu">
+			</nav>
+		</div>
+	</header>
+
+	<main class="main-catalogue container">
+		<p class="nav-catalogue"><a href="index.html">Accueil</a> <span> > Panier</span></p>
+
+		<h1>PANIER</h1>
+
+		<h2>DÉTAILS DE LA FACTURATION</h2>
+
+		<div class="grid-panier">
+
+
+			<ul class="liste-panier">
+				<li>
+					<ul><img src="img/drone-icon.png" alt="drone"> PRODUITS
+						<li>
+							<p>Drone 03</p>
+							<p>99,99$</p>
+						</li>
+						<li>
+							<p>Drone 07</p>
+							<p>199,99$</p>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<ul><img src="img/drone-icon.png" alt="drone"> SERVICES
+						<li>
+							<p>Cours de pilotage</p>
+							<p>89,99$</p>
+						</li>
+						<li>
+							<p>Service de cartographie</p>
+							<p>29,99$</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="facture"> 
+				<h2>FACTURATION</h2>
+
+				<div>
+					<div>
+						<p><strong>Sous-Total</strong></p>
+						<p>419,96$</p>
+					</div>
+	
+					<div>
+						<p><strong>TPS</strong></p>
+						<p>21,00$</p>
+					</div>
+	
+					<div>
+						<p><strong>TVQ</strong></p>
+						<p>41,89$</p>
+					</div>
+	
+					<div class="total">
+						<p><strong>Total</strong></p>
+						<p>482,85$</p>
+					</div>				
+				</div>
+
+				<div>
+					<a href="#">PAYER LA FACTURE</a>
+				</div>
+			</div>
+				
+
+		</div>
+
+
+		<div class="grid-concours">
+			<div class="concours-text">
+				<h4>CONCOURS</h4>
+				<p>Inscris-toi pour une formation de pilotage et cours la chance de gagner des billets pour aller
+					visiter une des grandes villes mondiales, cet été!</p>
+			</div>
+
+			<div>
+				<video autoplay loop muted <source src="medias/ville.mp4" alt="match"></video>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="flex-footer container">
+			<address><strong>SkyPixelDrones&nbsp;-&nbsp;</strong>1225, rue des Forces spéciales</address>
+			<p>Réalisé par: ALEXANDRE ROY</p>
+			<a href="tel:18005552323">1 800 555-2323</a>
+		</div>
+	</footer>
 </body>
 
 </html>
