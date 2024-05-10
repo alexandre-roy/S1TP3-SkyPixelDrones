@@ -382,14 +382,27 @@ label{
 .liste-panier, .liste-panier ul{
 	list-style-type: none;
 	font-family: 'Hind';
+	color: #2A5E88;
+	font-size: 2rem;
 }
 
-.liste-panier ul li{
+
+.li-panier{
 	display: flex;
 	justify-content: space-between;
-	padding-left: 5rem;
+	font-size: 1rem;
+	background-color: #87CEEB;
+	margin: 1rem 0px 1rem 4.5rem;
+	padding: 0px 0.5rem 0px 0.5rem;
 }
 
+.li-panier:hover{
+	background-color: lightgrey;
+}
+
+.li-panier a{
+	text-decoration: none;
+}
 .grid-panier{
 	display: grid;
 	grid-template-columns: 3fr 1fr;
@@ -407,9 +420,13 @@ label{
 
 .facture div div{
 	justify-content: space-between;
-	display: flex;	
+	display: flex;
 }
 
+aside{
+	display: flex;
+	align-items: center;
+}
 .facture h2{
 	color: white;
 	padding: 0px;
@@ -420,10 +437,9 @@ label{
 	text-decoration: none;
 	color: white;
 	background-color: #2A5E88;
-	padding: 0.2rem 0.5rem;
+	padding: 0.5rem;
 	border: 2px solid white;
 	border-radius: 2rem;
-	margin-left: 2rem;
 }
 
 .facture a:hover{
@@ -435,6 +451,11 @@ label{
 	border-bottom: 5px double white;
 	margin-bottom: 1.5rem;
 
+}
+
+.btn-facture{
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (max-width: 960px){
@@ -464,6 +485,9 @@ label{
 	textarea{
 		width: 100%;
 	}
+	.grid-panier{
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media screen and (min-width: 571px) and (max-width: 960px){
@@ -477,6 +501,12 @@ label{
 	textarea{
 		width: 100%;
 	}
+	.grid-panier{
+		grid-template-columns: 1fr;
+	}
+	aside{
+		justify-content: center;
+	}
 }
 
 @media screen and (max-width: 570px){
@@ -489,6 +519,13 @@ label{
 	textarea{
 		width: 100%;
 	}
+	.grid-panier{
+		grid-template-columns: 1fr;
+	}
+	aside{
+		justify-content: center;
+	}
+	
 }
 
 
