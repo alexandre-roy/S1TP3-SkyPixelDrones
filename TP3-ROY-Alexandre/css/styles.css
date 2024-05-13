@@ -2,12 +2,19 @@
 	box-sizing: border-box;
 }
 
+/* COULEUR DE FOND DU SITE */
+body {
+	background-color: #8dcf6d;
+}
+
+/* CONTAINER */
 .container {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
+/* HEADER ET FOOTER */
 header,
 footer {
 	background-color: #2a5e88;
@@ -32,14 +39,15 @@ header img {
 	margin: 1rem 0px 1rem 0px;
 }
 
+header video {
+	display: grid;
+	width: 100%;
+}
+
 .flex-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.float-right {
-	float: right;
 }
 
 nav ul li {
@@ -60,25 +68,6 @@ nav ul li a:hover {
 	margin: 1rem;
 }
 
-header video {
-	width: 100%;
-}
-
-.zone-texte {
-	background-color: #216d5f;
-	color: white;
-	font-family: "Hind";
-	padding: 1rem;
-	margin: 1rem 0 1rem 0;
-	font-size: 1.3rem;
-	text-align: center;
-}
-
-.zone-texte a {
-	color: white;
-	font-family: "Hind";
-}
-
 footer p,
 footer address {
 	font-family: "Montserrat";
@@ -87,17 +76,6 @@ footer address {
 
 footer div {
 	padding: 1rem;
-}
-
-.flex-center {
-	display: flex;
-	align-items: center;
-}
-
-.flex-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 footer a {
@@ -114,6 +92,33 @@ address {
 	font-style: normal;
 }
 
+.flex-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* PAGE ACCUEIL */
+.zone-texte {
+	background-color: #216d5f;
+	color: white;
+	font-family: "Hind";
+	padding: 1rem;
+	margin: 1rem 0 1rem 0;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.zone-texte a {
+	color: white;
+	font-family: "Hind";
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+}
+
 .grid-accueil {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -127,7 +132,7 @@ address {
 	font-family: Hind;
 	color: white;
 	font-size: 3rem;
-	background-color: #2a5e88;
+	background-color: #216d5f;
 	padding: 10rem 3rem;
 	text-align: center;
 	margin: 0px;
@@ -147,11 +152,6 @@ address {
 	grid-row: span 2;
 }
 
-.montagnes {
-	grid-column: 3/5;
-	grid-row: 1/3;
-}
-
 .grid-area-2x1 {
 	grid-column: span 2;
 }
@@ -166,10 +166,7 @@ address {
 	grid-row: 3/4;
 }
 
-.show-on-mobile {
-	display: none !important;
-}
-
+/* PAGE CATALOGUE */
 .main-catalogue {
 	background-color: white;
 	padding-bottom: 0.1rem;
@@ -207,20 +204,6 @@ address {
 	color: #2a5e88;
 	font-size: 2rem;
 	padding: 1rem 0px 0px 4rem;
-}
-
-.requis-text {
-	font-family: Montserrat;
-	color: #2a5e88;
-	padding: 1rem 0px 0px 4rem;
-}
-
-.red-text {
-	color: red;
-}
-
-body {
-	background-color: #8dcf6d;
 }
 
 .grid-catalogue {
@@ -284,6 +267,17 @@ body {
 	border: 3px solid #8dcf6d;
 }
 
+/* PAGE COMMANDE ET CONFIRMATION */
+.requis-text {
+	font-family: Montserrat;
+	color: #2a5e88;
+	padding: 1rem 0px 0px 4rem;
+}
+
+.red-text {
+	color: red;
+}
+
 .grid-formulaire {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -342,42 +336,6 @@ label,
 	font-family: "Montserrat";
 }
 
-.grid-concours {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 1rem;
-	background-color: lightgray;
-	padding: 1rem;
-	margin: 2rem 4rem 4rem 4rem;
-	border-radius: 2rem;
-	border: 3px solid #8dcf6d;
-}
-
-.grid-concours div {
-	border: 0.2rem solid white;
-	background-color: #216d5f;
-	font-family: "Hind";
-	border-radius: 2rem;
-}
-
-.concours-text p {
-	text-align: center;
-	color: white;
-	font-size: 1.8rem;
-	padding: 0 1.5rem 0 1.5rem;
-}
-
-.grid-concours video {
-	border-radius: 2rem;
-}
-
-.concours-text h4 {
-	font-size: 2.5rem;
-	color: white;
-	text-align: center;
-	margin-bottom: 0px;
-}
-
 .confirmation {
 	color: white;
 	font-family: "Montserrat";
@@ -390,6 +348,7 @@ label,
 	margin-top: 11rem;
 }
 
+/*PAGE PANIER */
 .liste-panier,
 .liste-panier ul {
 	list-style-type: none;
@@ -468,10 +427,49 @@ aside {
 	justify-content: center;
 }
 
-header video {
+/* CONCOURS */
+.grid-concours {
 	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	background-color: lightgray;
+	padding: 1rem;
+	margin: 2rem 4rem 4rem 4rem;
+	border-radius: 2rem;
+	border: 3px solid #8dcf6d;
 }
 
+.grid-concours div {
+	border: 0.2rem solid white;
+	background-color: #216d5f;
+	font-family: "Hind";
+	border-radius: 2rem;
+}
+
+.concours-text p {
+	text-align: center;
+	color: white;
+	font-size: 1.8rem;
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.grid-concours video {
+	border-radius: 2rem;
+}
+
+.concours-text h4 {
+	font-size: 2.5rem;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+/* MOBILE */
+.show-on-mobile {
+	display: none !important;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
 	.grid-accueil,
 	.grid-catalogue {
@@ -519,6 +517,9 @@ header video {
 	aside {
 		justify-content: center;
 	}
+	.grid-concours {
+		grid-template-columns: 1fr;
+	}
 }
 
 @media screen and (max-width: 570px) {
@@ -541,5 +542,21 @@ header video {
 	}
 	aside {
 		justify-content: center;
+	}
+	.grid-concours {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* IMPRESSION DU CATALOGUE */
+@media print {
+	.no-print {
+		display: none !important;
+	}
+	.grid-catalogue {
+		grid-template-columns: 1fr 1fr;
+	}
+	.print-no-bg {
+		background-color: white;
 	}
 }
